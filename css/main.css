@@ -1,0 +1,349 @@
+@charset "utf-8";
+/* CSS Document */
+
+html
+{
+    overflow-x: hidden;
+    scroll-behavior: "smooth";
+}
+body
+{
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+    overflow-x: hidden;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+h1{font-size: 45pt !important; font-weight: bold !important;}
+h2{font-size: 30pt !important; font-weight: bold !important;}
+h3{font-size: 20pt !important; font-weight: bold !important;}
+h3.a{word-spacing: 50pt;}
+h4{font-size: 18pt !important; font-weight: bold !important;}
+p{color: rgba(134,134,134,1.00); line-height: 2.5;}
+.p1{color: rgba(232,112,62,1.00);}
+
+img
+{
+    width: auto;
+}
+
+section
+{
+    display: block;
+}
+.navbar
+{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.menu1
+{
+    background-color:rgba(237,237,237,1.00);
+    height: auto;
+}
+
+.dropdown-item
+{
+    background-color: none !important;
+    color: rgba(134,134,134,1.00) !important;
+}
+
+.dropdown-menu
+{
+    background-color: none !important;
+    color: rgba(134,134,134,1.00) !important;
+}
+
+.btn1 
+{
+    background-color: #f48146 !important;
+    color: white !important;
+    border: none !important;
+    font-size: 10pt !important;
+    border-radius: 40% !important;
+}
+
+.btn:hover
+{
+    color:rgba(30,29,29,1.00) !important;
+}
+
+.banner
+{
+	background-color: rgba(253,241,227,1.00);
+	height: auto;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+	display: flex;
+	justify-content: center;
+    position: relative;
+    color: #232323;
+}
+
+.header-area
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+.header-area h5
+{
+    position: relative;
+    color: white;
+    font-size: 7vw !important;
+    -webkit-text-stroke: 0vw transparent !important;
+}
+
+h5::before
+{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #f48146;
+    -webkit-text-stroke: 0vw white;
+    border-right: 2px solid #f48146;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate
+{
+    0%,10%,100%
+    {
+        width: 0;
+    }
+    70%,90%
+    {
+        width: 100%;
+    }
+}
+
+.header-area h2 span
+{
+    color: #f48146 !important;
+}
+
+.pic1
+{
+    height: auto;
+    background: none;
+    position: absolute;
+    padding: 10% 0 0 20%;
+}
+
+.pic11
+{
+    border: solid white thick;
+    box-shadow: 0 0 50px rgba(33,33,33,.2); 
+}
+
+.pic2
+{
+    background: none;
+    z-index: 100;
+    margin-top: 45%;
+    margin-left: 55%;
+    position: relative;
+}
+
+.pic3
+{
+    height: auto;
+    background: none;
+}
+
+.howcanwehelp
+{
+    background-color: none;
+    cursor: pointer;
+}
+
+.howcanwehelp:hover
+{
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.homeofficestore
+{
+    color: rgba(244,129,70,1.00);
+}
+
+.comment
+{
+    background-color: none;
+    display: flex;
+    justify-content: center;
+}
+.subscribe
+{
+	background-image: url("../images/subscribe.png");
+	height: 50vh;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+
+.form-submit
+{
+    background-color: #f48146;
+}
+
+.form-control0
+{
+    border-radius: 50pt !important;
+    background-color: rgba(236,236,236,1.00) !important;
+    border: solid rgba(255,255,255,1.00) !important;
+    padding: 1.5rem 1rem !important;
+}
+
+.form-control1
+{
+    color: #B7B7B7 !important;
+    border: none !important;
+    border-bottom: solid 1px #DFDFDF !important;
+    background-color: none !important;
+}
+
+.fa
+{
+    padding: 1.2% 1.3%;
+    border-radius: 100%;
+    text-align: center;
+    text-decoration: none;
+    background-color: #EDEDED;
+    color: white;
+    cursor: pointer;
+}
+
+.fa:hover
+{
+    background-color: #f48146;
+}
+
+@media screen and (min-width:540px) and (max-width: 1100px)
+{
+    img{width: 30% !important;}
+    h1{font-size: 30pt !important;}
+	h2{font-size: 15pt !important;}
+	h3{font-size: 12pt !important;}
+    h3.a{word-spacing: 10pt;}
+	h4{font-size: 10pt !important;}
+	h5{font-size: 10pt !important;}
+	h6{font-size: 9pt !important;}
+	p{font-size: 8pt !important;}
+    .pic1
+{
+    background: none;
+    position: absolute;
+}
+
+.pic2
+{
+    background: none;
+    z-index: 100;
+    border: solid thick;
+    margin-top: 25%;
+    margin-left: 30%;
+    position: relative;
+    border: solid white thick;
+}
+}
+
+@media screen and (max-width: 510px)
+{
+	h1{font-size: 15pt !important;}
+	h2{font-size: 15pt !important;}
+	h3{font-size: 12pt !important;}
+    h3.a{word-spacing: 10pt;}
+	h4{font-size: 10pt !important;}
+	h5{font-size: 10pt !important;}
+	h6{font-size: 9pt !important;}
+	p{font-size: 8pt !important;}
+    a{margin: 0 !important; padding: 0 0 10px 40px !important;}
+	input{font-size:7pt !important;}
+	textarea{font-size:7pt !important;}
+    img{width: 40% !important;}
+    .btn1 {
+    background-color: #f48146 !important;
+    color: white !important;
+    border: none !important;
+    font-size: 8pt !important;
+    border-radius: 40% !important;}
+.pic2
+{
+    background: none;
+    z-index: 100;
+    margin-top: 35%;
+    margin-left: 50%;
+    position: relative;
+}
+    .a.nav-link{margin: 0; padding: 0;}
+
+}
+
+.rotate-vert-center {
+	-webkit-animation: rotate-vert-center 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+	        animation: rotate-vert-center 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+@-webkit-keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+@keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #ff8b38; 
+    color: white; 
+    cursor: pointer; 
+    padding: 10px 15px; 
+    border-radius: 90%; 
+    font-size: 11pt; 
+scroll-behavior:smooth;
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+    scroll-behavior:smooth;
+}
